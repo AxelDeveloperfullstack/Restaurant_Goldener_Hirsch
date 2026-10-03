@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Speisekarte des Gasthofs zum Goldenen Hirsch mit fränkisch-bayerischen Klassikern, regionalen Zutaten und hausgemachten Gerichten."
+    />
+
+    <title>Speisekarte | Goldener Hirsch</title>
+
+    <link rel="stylesheet" href="menue-style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="header-logo" href="../index.html" aria-label="Zur Startseite">
+        <img
+          src="../assets/images/Gasthof zum Goldenen Hirsch - Logo.webp"
+          alt="Logo Gasthof zum Goldenen Hirsch"
+        />
+
+        <span>
+          Gasthof zum <br />
+          Goldenen Hirsch
+        </span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Navigation öffnen"
+        aria-controls="navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="navigation" aria-label="Hauptnavigation">
+        <a href="../index.html">Home</a>
+        <a href="../ueber-uns/index.html">Über uns</a>
+        <a href="../reservierung/index.html">Reservierung</a>
+        <a href="index.html" aria-current="page">Menü</a>
+      </nav>
+
+      <a
+        class="button button-gold header-reserve-button"
+        href="../reservierung/index.html"
+      >
+        Tisch reservieren
+      </a>
+    </header>
+
+    <main>
+      <section class="menu-hero">
+        <div class="menu-hero__content">
+          <p class="eyebrow">REGIONAL · HAUSGEMACHT · HERZHAFT</p>
+          <h1>Unsere Speisekarte</h1>
+          <p class="menu-hero__text">
+            Fränkisch-bayerische Küche, ehrliche Zutaten und Klassiker, die nach
+            Heimat schmecken.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-dark" href="#hauptgerichte">
+              Speisekarte ansehen
+            </a>
+            <a class="button button-gold" href="../reservierung/index.html">
+              Tisch reservieren
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-intro page-width">
+        <div class="menu-intro__text">
+          <p class="section-kicker">GUT ESSEN. GEMEINSAM GENIESSEN.</p>
+          <h2>Aus unserer Küche</h2>
+          <p>
+            Unsere Gerichte werden frisch zubereitet und verbinden bewährte
+            Rezepte mit hochwertigen Zutaten aus der Region. Neben unseren
+            deftigen Klassikern finden Sie auch vegetarische Gerichte und
+            saisonale Empfehlungen.
+          </p>
+        </div>
+
+        <div class="menu-intro__facts" aria-label="Merkmale unserer Küche">
+          <div>
+            <strong>Seit 1985</strong>
+            <span>mit Herz gekocht</span>
+          </div>
+          <div>
+            <strong>Regional</strong>
+            <span>ausgewählte Zutaten</span>
+          </div>
+          <div>
+            <strong>Hausgemacht</strong>
+            <span>frisch zubereitet</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="category-navigation" aria-label="Speisekarten-Kategorien">
+        <div class="category-navigation__inner">
+          <a href="#empfehlungen">Empfehlungen</a>
+          <a href="#vorspeisen">Vorspeisen</a>
+          <a href="#hauptgerichte">Hauptgerichte</a>
+          <a href="#vegetarisch">Vegetarisch</a>
+          <a href="#kinder">Kinder</a>
+          <a href="#desserts">Desserts</a>
+          <a href="#getraenke">Getränke</a>
+        </div>
+      </nav>
+
+      <section class="menu-section menu-section--cream" id="empfehlungen">
+        <div class="page-width">
+          <div class="section-heading section-heading--center">
+            <p class="section-kicker">BESONDERS BELIEBT</p>
+            <h2>Unsere Empfehlungen</h2>
+            <p>
+              Vier Klassiker, für die unser Gasthof seit vielen Jahren steht.
+            </p>
+          </div>
+
+          <div class="featured-grid">
+            <article class="featured-card">
+              <img
+                src="../assets/images/schweinebraten.webp"
+                alt="Schweinebraten mit Beilagen"
+              />
+              <div class="featured-card__body">
+                <div class="featured-card__title">
+                  <h3>Schweinebraten</h3>
+                  <strong>18,90 €</strong>
+                </div>
+                <p>Mit Dunkelbiersoße, hausgemachten Knödeln und Krautsalat.</p>
+                <span class="dish-label">Hausklassiker</span>
+              </div>
+            </article>
+
+            <article class="featured-card">
+              <img
+                src="../assets/images/rouladen.webp"
+                alt="Rinderroulade mit Soße"
+              />
+              <div class="featured-card__body">
+                <div class="featured-card__title">
+                  <h3>Rinderroulade</h3>
+                  <strong>21,50 €</strong>
+                </div>
+                <p>
+                  Klassisch gefüllt, dazu kräftige Soße, Spätzle und Gemüse.
+                </p>
+                <span class="dish-label">Traditionell</span>
+              </div>
+            </article>
+
+            <article class="featured-card">
+              <img
+                src="../assets/images/hausgemachte-knoedel.webp"
+                alt="Hausgemachte Knödel"
+              />
+              <div class="featured-card__body">
+                <div class="featured-card__title">
+                  <h3>Knödelpfanne</h3>
+                  <strong>15,90 €</strong>
+                </div>
+                <p>
+                  Gebratene Knödel mit Pilzen, Rahmsoße und frischen Kräutern.
+                </p>
+                <span class="dish-label dish-label--green">Vegetarisch</span>
+              </div>
+            </article>
+
+            <article class="featured-card">
+              <img
+                src="../assets/images/frisches-bier.webp"
+                alt="Frisch gezapftes Bier"
+              />
+              <div class="featured-card__body">
+                <div class="featured-card__title">
+                  <h3>Frisch gezapft</h3>
+                  <strong>ab 4,20 €</strong>
+                </div>
+                <p>Regionale Biere vom Fass und ausgewählte Flaschenbiere.</p>
+                <span class="dish-label">Aus der Region</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="vorspeisen">
+        <div class="page-width menu-layout">
+          <div class="section-heading menu-layout__heading">
+            <p class="section-kicker">ZUM ANKOMMEN</p>
+            <h2>Vorspeisen & Suppen</h2>
+            <p>
+              Kleine Gerichte für den ersten Hunger oder als Einstieg in einen
+              gemütlichen Abend.
+            </p>
+          </div>
+
+          <div class="dish-grid">
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Kräftige Rinderbrühe</h3>
+                <strong>6,90 €</strong>
+              </div>
+              <p>Mit hausgemachten Flädle und Schnittlauch.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Fränkische Festtagssuppe</h3>
+                <strong>7,90 €</strong>
+              </div>
+              <p>Mit Grießnockerl, Flädle und Leberknödel.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Obazda</h3>
+                <strong>9,50 €</strong>
+              </div>
+              <p>Mit roten Zwiebeln, Radieschen und Bauernbrot.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Kleiner Beilagensalat</h3>
+                <strong>5,90 €</strong>
+              </div>
+              <p>Blattsalate, Rohkost und Hausdressing.</p>
+              <span class="dish-label dish-label--green">Vegetarisch</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--green" id="hauptgerichte">
+        <div class="page-width">
+          <div class="section-heading section-heading--light">
+            <p class="section-kicker">DEFTIG UND EHRLICH</p>
+            <h2>Hauptgerichte</h2>
+            <p>
+              Bewährte Klassiker, großzügige Portionen und Soßen, die noch mit
+              Ruhe gekocht werden.
+            </p>
+          </div>
+
+          <div class="dish-grid dish-grid--light">
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Fränkischer Sauerbraten</h3>
+                <strong>22,50 €</strong>
+              </div>
+              <p>Mit Lebkuchensoße, Kartoffelknödeln und Apfelblaukraut.</p>
+              <span class="dish-label">Empfehlung</span>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Schnitzel „Wiener Art“</h3>
+                <strong>18,50 €</strong>
+              </div>
+              <p>Vom Schwein, mit Pommes frites und kleinem Salat.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Zwiebelrostbraten</h3>
+                <strong>26,90 €</strong>
+              </div>
+              <p>Mit Röstzwiebeln, Bratensoße und Kässpatzen.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Schäufele</h3>
+                <strong>21,90 €</strong>
+              </div>
+              <p>Mit knuspriger Kruste, Dunkelbiersoße und Kartoffelknödel.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Käsespätzle</h3>
+                <strong>16,50 €</strong>
+              </div>
+              <p>Mit würzigem Bergkäse, Röstzwiebeln und kleinem Salat.</p>
+              <span class="dish-label dish-label--green">Vegetarisch</span>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Gebratenes Zanderfilet</h3>
+                <strong>24,50 €</strong>
+              </div>
+              <p>Mit Petersilienkartoffeln, Gemüse und Zitronenbutter.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="vegetarisch">
+        <div class="page-width menu-layout">
+          <div class="section-heading menu-layout__heading">
+            <p class="section-kicker">OHNE FLEISCH, MIT GESCHMACK</p>
+            <h2>Vegetarische Gerichte</h2>
+            <p>
+              Bodenständig, frisch und vollwertig – nicht nur als Beilage
+              gedacht.
+            </p>
+          </div>
+
+          <div class="dish-grid">
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Serviettenknödel mit Pilzrahm</h3>
+                <strong>16,90 €</strong>
+              </div>
+              <p>Mit gebratenen Waldpilzen und Kräutersalat.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Ofenkartoffel</h3>
+                <strong>14,90 €</strong>
+              </div>
+              <p>Mit Kräuterquark, Grillgemüse und Salatbouquet.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Gemüsemaultaschen</h3>
+                <strong>16,50 €</strong>
+              </div>
+              <p>Geschmelzt mit Zwiebeln, dazu Kartoffel-Gurkensalat.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Großer Marktsalat</h3>
+                <strong>15,50 €</strong>
+              </div>
+              <p>Mit gebratenen Pilzen, Kernen, Croutons und Hausdressing.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--cream" id="kinder">
+        <div class="page-width menu-layout">
+          <div class="section-heading menu-layout__heading">
+            <p class="section-kicker">FÜR KLEINE GÄSTE</p>
+            <h2>Kindergerichte</h2>
+            <p>Lieblingsgerichte in einer passenden Portionsgröße.</p>
+          </div>
+
+          <div class="dish-grid">
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Kleines Schnitzel</h3>
+                <strong>10,50 €</strong>
+              </div>
+              <p>Mit Pommes frites.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Spätzle mit Soße</h3>
+                <strong>6,50 €</strong>
+              </div>
+              <p>Auf Wunsch mit kleinem Gemüse.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Kleine Käsespätzle</h3>
+                <strong>8,50 €</strong>
+              </div>
+              <p>Mit mildem Käse und Röstzwiebeln separat.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Räuberteller</h3>
+                <strong>0,00 €</strong>
+              </div>
+              <p>Ein leerer Teller zum Probieren bei den Erwachsenen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="desserts">
+        <div class="page-width menu-layout">
+          <div class="section-heading menu-layout__heading">
+            <p class="section-kicker">ETWAS SÜSSES ZUM SCHLUSS</p>
+            <h2>Desserts</h2>
+            <p>Hausgemachte Nachspeisen und warme Klassiker.</p>
+          </div>
+
+          <div class="dish-grid">
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Warmer Apfelküchle</h3>
+                <strong>8,90 €</strong>
+              </div>
+              <p>Mit Zimtzucker, Vanillesoße und einer Kugel Eis.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Kaiserschmarrn</h3>
+                <strong>10,90 €</strong>
+              </div>
+              <p>Mit Rosinen, Puderzucker und Apfelmus.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Bayrisch Creme</h3>
+                <strong>7,90 €</strong>
+              </div>
+              <p>Mit Fruchtsoße und frischen Beeren.</p>
+            </article>
+
+            <article class="dish-item">
+              <div class="dish-item__top">
+                <h3>Gemischtes Eis</h3>
+                <strong>6,90 €</strong>
+              </div>
+              <p>Drei Kugeln nach Wahl mit Sahne.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--green" id="getraenke">
+        <div class="page-width">
+          <div class="section-heading section-heading--light">
+            <p class="section-kicker">ZUM ANSTOSSEN UND GENIESSEN</p>
+            <h2>Getränkeauswahl</h2>
+            <p>
+              Eine kleine Auswahl. Die vollständige Getränkekarte erhalten Sie
+              bei unserem Service.
+            </p>
+          </div>
+
+          <div class="drink-columns">
+            <article class="drink-group">
+              <h3>Alkoholfrei</h3>
+              <div class="drink-row">
+                <span>Mineralwasser 0,25 l</span><strong>3,10 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Mineralwasser 0,75 l</span><strong>6,90 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Apfelschorle 0,4 l</span><strong>4,50 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Cola, Fanta, Sprite 0,4 l</span><strong>4,50 €</strong>
+              </div>
+            </article>
+
+            <article class="drink-group">
+              <h3>Bier</h3>
+              <div class="drink-row">
+                <span>Helles vom Fass 0,5 l</span><strong>4,50 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Weizen 0,5 l</span><strong>4,70 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Radler 0,5 l</span><strong>4,50 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Alkoholfreies Bier 0,5 l</span><strong>4,50 €</strong>
+              </div>
+            </article>
+
+            <article class="drink-group">
+              <h3>Wein</h3>
+              <div class="drink-row">
+                <span>Silvaner 0,2 l</span><strong>6,90 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Grauburgunder 0,2 l</span><strong>7,20 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Spätburgunder 0,2 l</span><strong>7,50 €</strong>
+              </div>
+              <div class="drink-row">
+                <span>Weinschorle 0,4 l</span><strong>6,50 €</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-cta">
+        <div class="reservation-cta__content page-width">
+          <div>
+            <p class="section-kicker">EIN TISCH FÜR SIE</p>
+            <h2>Wir freuen uns auf Ihren Besuch</h2>
+            <p>
+              Reservieren Sie Ihren Tisch bequem online oder rufen Sie uns an.
+            </p>
+          </div>
+
+          <a class="button button-gold" href="../reservierung/index.html">
+            Jetzt Tisch reservieren
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="menu-notes page-width"
+        aria-label="Hinweise zur Speisekarte"
+      >
+        <h2>Hinweise</h2>
+        <p>
+          Änderungen der Beilagen sind nach Möglichkeit gerne machbar. Bei
+          Allergien oder Unverträglichkeiten sprechen Sie bitte unser
+          Serviceteam an. Alle Preise verstehen sich inklusive gesetzlicher
+          Mehrwertsteuer und Bedienung.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-main page-width">
+        <div class="footer-brand">
+          <img src="../assets/images/hirsch_icon.webp" alt="Hirschlogo" />
+          <div>
+            <h2>Gasthof zum Goldenen Hirsch</h2>
+            <address>
+              Beispielstraße 12<br />
+              12345 Musterhausen<br />
+              Tel.: 01234 56789<br />
+              E-Mail: info@goldener-hirsch.de
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-opening">
+          <h3>Öffnungszeiten</h3>
+          <div class="opening-row">
+            <span>Mi – Fr</span>
+            <span>11:30 – 14:00</span>
+            <span>17:00 – 22:00</span>
+          </div>
+          <div class="opening-row">
+            <span>Samstag</span>
+            <span>11:30 – 14:00</span>
+            <span>17:00 – 23:00</span>
+          </div>
+          <div class="opening-row">
+            <span>Sonntag</span>
+            <span>11:30 – 14:00</span>
+            <span>17:00 – 20:00</span>
+          </div>
+          <div class="opening-row">
+            <span>Mo – Di</span>
+            <span>Ruhetag</span>
+            <span></span>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Rechtliche Navigation">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">Copyright</a>
+        </nav>
+      </div>
+
+      <p class="footer-copyright">
+        © Gasthof zum Goldenen Hirsch 2026. Alle Rechte vorbehalten.
+      </p>
+    </footer>
+  </body>
+</html>

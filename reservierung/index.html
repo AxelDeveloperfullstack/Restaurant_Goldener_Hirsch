@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../ueber-uns/ueber-uns.css">
+    <link rel="stylesheet" href="reservierungs-style.css">
+    <script src="reservierungs-scirpt.js" defer></script>
+
+    <title>Reservierung | Zum Goldenen Hirsch</title>
+<body>
+
+<header>
+    <div id="headerLogo">
+        <img
+                src="../assets/images/Gasthof zum Goldenen Hirsch - Logo.webp"
+                alt="Logo Gasthof zum Goldenen Hirsch"
+        />
+
+        <h1>
+            Gasthof zum <br />
+            Goldenen Hirsch
+        </h1>
+    </div>
+
+    <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Navigation öffnen"
+            aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="navigation">
+        <a href="../index.html">Home</a>
+        <a href="../ueber-uns/index.html">Über uns</a>
+        <a href="index.html">Reservierung</a>
+        <a href="../menue/index.html">Menü</a>
+    </nav>
+
+    <button class="reserve-button header-reserve-button" type="button">
+        Tisch reservieren
+    </button>
+</header>
+
+<section class="ueberHeader">
+    <div id="headings">
+        <h2>Tisch Reservieren</h2>
+
+        <h4>Reservieren Sie Ihren Tisch bequem online.</h4>
+    </div>
+
+    <div id="headingsButtons">
+        <form action="../menue/index.html" method="get" style="display: inline;">
+            <button id="dirspeiseButton" type="submit">
+                Speisekarte ansehen
+            </button>
+        </form>
+    </div>
+</section>
+
+
+<main class="container">
+    <form class="booking-card">
+        <h2>Ihre Reservierung</h2>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="name">Vollständiger Name</label>
+                <input type="text" id="name" placeholder="Erika Mustermann" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" placeholder="beispiel@web.de">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Datum</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Uhrzeit</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Anzahl der Personen</label>
+                <select id="guests">
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Personen</option>
+                    <option value="3">3 Personen</option>
+                    <option value="4">4+ Personen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefonnummer</label>
+                <input type="tel" id="phone" placeholder="0123 456789" required>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="reset" class="btn-secondary">Eingaben löschen</button>
+            <button type="submit" class="btn-primary">Reservierung anfragen</button>
+        </div>
+
+        <div class="hint-text">
+            <p>Hinweis: Die Reservierung ist erst gültig sobald sie eine bestätigung von uns erhalten haben. Diese erhalten sie über die von ihn angegeben Kontakt daten. Deswegen achten sie darauf das diese Korrekt sind!</p>
+            <p>Bei fragen rufen sie uns gerne an, oder schreiben sie eine E-Mail. </p>
+            <p>MfG, Ihr Zum Goldenen Hirsch Team!</p>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="footMain">
+        <div class="foot1h">
+            <img src="../assets/images/hirsch_icon.webp" alt="Hirschlogo" />
+        </div>
+        <div class="foot1">
+            <h4>Gasthof zum <br />Goldenen Hirsch</h4>
+            <address>Beispielstraße 12</address>
+            <address>12345 Musterhause</address>
+            <address>Tel.: 0123456789</address>
+            <address>Mail: Muster@goldener-Hirsch.de</address>
+        </div>
+
+        <div class="foot2o">
+            <h5>Öffnungszeiten</h5>
+            <div class="foot2">
+                <div class="oeffnungszeiten">
+                    <p>Mi - Fr</p>
+                    <p>Sa</p>
+                    <p>So</p>
+                    <p>Mo - Di</p>
+                </div>
+                <div class="oeffnungszeiten">
+                    <p>11:30 - 14:00 Uhr</p>
+                    <p>11:30 - 14:00 Uhr</p>
+                    <p>11:30 - 14:00 Uhr</p>
+                    <p>Ruhetag</p>
+                </div>
+                <div class="oeffnungszeiten">
+                    <p>17:00 - 22:00 Uhr</p>
+                    <p>17:00 - 23:00 Uhr</p>
+                    <p>17:00 - 20:00 Uhr</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot3i">
+            <a href="">Impressum</a>
+            <a href="">Datenschutz</a>
+            <a href="">Copyright</a>
+        </div>
+    </div>
+
+    <div>
+    <p>
+        © Copyright by Gasthof zum Goldenen Hirsch 2026. Alle Rechte
+        vorbehalten.
+    </p>
+
+    </div>
+</footer>
+</body>
+</html>
