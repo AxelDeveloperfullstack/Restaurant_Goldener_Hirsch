@@ -1,0 +1,307 @@
+/* =========================================
+   HEADER
+   Gasthof zum Goldenen Hirsch
+========================================= */
+
+/* =========================================
+   HEADER – DESKTOP
+========================================= */
+
+header {
+  position: relative;
+  z-index: 1000;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  min-height: 100px;
+  padding: 0 15px;
+
+  background-color: rgb(4, 44, 4);
+  color: rgb(235, 191, 50);
+
+  box-shadow: 5px 5px 15px 3px #000000;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* =========================================
+   LOGO + ÜBERSCHRIFT
+========================================= */
+
+#headerLogo {
+  display: flex;
+  align-items: center;
+
+  justify-self: start;
+
+  min-width: 0;
+}
+
+#headerLogo img {
+  width: auto;
+  height: 80px;
+
+  margin-right: 10px;
+
+  border-radius: 20%;
+
+  flex-shrink: 0;
+}
+
+#headerLogo h1 {
+  margin: 0;
+
+  color: rgb(235, 191, 50);
+
+  font-size: 26px;
+  line-height: 1.05;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  justify-self: center;
+
+  gap: 5px;
+}
+
+header nav a {
+  padding: 8px;
+
+  color: white;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(168, 137, 34, 0.945);
+}
+
+/* =========================================
+   RESERVIERUNGSBUTTON
+========================================= */
+
+.reserve-button {
+  padding: 10px 14px;
+
+  color: white;
+
+  background-color: rgba(168, 137, 34, 0.945);
+
+  border: 1px solid rgb(194, 180, 100);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.reserve-button:hover {
+  color: black;
+
+  background-color: rgb(194, 180, 100);
+}
+
+.header-reserve-button {
+  justify-self: end;
+}
+
+/* =========================================
+   BURGER-BUTTON
+========================================= */
+
+.menu-button {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 7px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+
+  width: 30px;
+  height: 3px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* =========================================
+   BURGER → X
+========================================= */
+
+.menu-button.aktiv span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.aktiv span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.aktiv span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================
+   TABLET / KLEINERE DESKTOPS
+========================================= */
+
+@media (max-width: 1100px) {
+  header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 85px;
+
+    padding: 8px 15px;
+  }
+
+  /* Logo */
+
+  #headerLogo img {
+    height: 65px;
+  }
+
+  #headerLogo h1 {
+    font-size: 20px;
+  }
+
+  /* Reservierungsbutton ausblenden */
+
+  .header-reserve-button {
+    display: none;
+  }
+
+  /* Burger anzeigen */
+
+  .menu-button {
+    display: flex;
+
+    flex-shrink: 0;
+  }
+
+  /* Navigation */
+
+  header nav {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    background-color: rgb(4, 44, 4);
+
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Wird über JavaScript geöffnet */
+
+  header nav.offen {
+    display: flex;
+  }
+
+  header nav a {
+    width: 100%;
+
+    padding: 16px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  header nav a:hover {
+    text-decoration: none;
+
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* =========================================
+   SMARTPHONES
+========================================= */
+
+@media (max-width: 600px) {
+  header {
+    min-height: 75px;
+
+    padding: 6px 10px;
+  }
+
+  #headerLogo img {
+    height: 55px;
+
+    margin-right: 7px;
+  }
+
+  #headerLogo h1 {
+    font-size: 16px;
+  }
+
+  .menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-button span {
+    width: 27px;
+  }
+}
+
+/* =========================================
+   SEHR KLEINE SMARTPHONES
+========================================= */
+
+@media (max-width: 390px) {
+  #headerLogo h1 {
+    font-size: 14px;
+  }
+}

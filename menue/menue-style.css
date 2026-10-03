@@ -68,104 +68,122 @@ button {
 
 .site-header {
   position: relative;
-  z-index: 1000;
-
-  min-height: 100px;
-  padding: 10px 18px;
 
   display: grid;
-  grid-template-columns: minmax(250px, 1fr) auto minmax(250px, 1fr);
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 
-  color: var(--gold-light);
-  background-color: var(--green);
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  min-height: 100px;
+  padding: 0 15px;
+
+  background-color: rgb(4, 44, 4);
+  color: rgb(235, 191, 50);
+
+  box-shadow: 5px 5px 15px 3px #000000;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  z-index: 1000;
 }
 
-.header-logo {
-  min-width: 0;
+/* LOGO + ÜBERSCHRIFT */
 
+.header-logo {
   display: flex;
   align-items: center;
   justify-self: start;
-  gap: 12px;
 
-  color: var(--gold-light);
+  min-width: 0;
+
+  color: rgb(235, 191, 50);
   text-decoration: none;
-  font-size: 25px;
+
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.05;
 }
 
 .header-logo img {
   width: auto;
-  height: 78px;
-  border-radius: 18%;
+  height: 80px;
+
+  margin-right: 10px;
+
+  border-radius: 20%;
+
   flex-shrink: 0;
 }
+
+/* Falls deine Überschrift ein h1 ist */
+
+.header-logo h1 {
+  margin: 0;
+
+  font-size: 26px;
+  line-height: 1.05;
+}
+
+/* NAVIGATION */
 
 .site-header > nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+
+  gap: 5px;
+
+  justify-self: center;
 }
 
 .site-header > nav a {
-  position: relative;
-  padding: 10px;
+  padding: 8px;
 
-  color: var(--white);
+  color: white;
   text-decoration: none;
+
   white-space: nowrap;
 }
 
-.site-header > nav a::after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  bottom: 3px;
-
-  height: 2px;
-  background-color: var(--gold);
-
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.25s ease;
+.site-header > nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(168, 137, 34, 0.945);
 }
 
-.site-header > nav a:hover::after,
-.site-header > nav a[aria-current="page"]::after {
-  transform: scaleX(1);
-}
+/* RESERVIERUNGSBUTTON */
 
 .header-reserve-button {
   justify-self: end;
 }
 
+/* BURGER BUTTON */
+
 .menu-button {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 5px;
+
   width: 44px;
   height: 44px;
   padding: 7px;
 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  background: none;
+  border: none;
 
-  background: transparent;
-  border: 0;
   cursor: pointer;
 }
 
 .menu-button span {
-  width: 29px;
-  height: 3px;
   display: block;
 
-  background-color: var(--white);
+  width: 30px;
+  height: 3px;
+
+  background-color: white;
   border-radius: 10px;
 
   transition:
